@@ -41,6 +41,7 @@ function get(item) {
   if (item.enhancement === 0) {
     name: item.name
   } else {
+    console.log(item.enhancement)
     item.name = `[+${item.enhancement}] ${item.name}`
   }
   return { ...item };
